@@ -1,0 +1,14 @@
+{
+  "name": "Roeisloepvereniging Averij, Arnhem",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "sass --load-path=node_modules main.scss main.css",
+    "watch": "sass --load-path=node_modules --watch main.scss main.css"
+  },
+  "dependencies": {
+    "bulma": "^1.0.3"
+  },
+  "devDependencies": {
+    "sass": "^1.85.1"
+  }
+}

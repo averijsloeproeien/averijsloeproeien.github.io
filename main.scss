@@ -1,0 +1,50 @@
+$rescue-boat-orange-lightest: #FF9626;
+$rescue-boat-orange-light: #FF6D13;
+$rescue-boat-orange: #FF4100;
+
+$emperor-light: #858585;
+$emperor: #525252;
+$emperor-dark: #414141;
+$emperor-darker: #202020;
+$emperor-darkest: #181818;
+
+$sky-light: #398FFF;
+$sky: #1E68C9;
+$sky-dark: #004B9B;
+$sky-darker: #00306F;
+$sky-darkest: #00002B;
+
+@use "bulma/sass" with (
+  $grey-dark: $emperor-dark,
+  $grey-light: $emperor-light,
+  $primary: $rescue-boat-orange,
+  $link: $rescue-boat-orange-light,
+  $body-background-color: $emperor-darker,
+  $radius: 0,
+);
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main_logo {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bg-sky-darkest {
+    background: linear-gradient(#000, $sky-darkest 40vh, $sky-darkest 100vh);
+}
+
+.bg-grey {
+  background-color: $emperor-dark;
+  color: white;
+}
+
+*, body {
+  text-wrap: pretty;
+  hyphens: auto;
+  hyphenate-limit-chars: 10 8 8;
+}
